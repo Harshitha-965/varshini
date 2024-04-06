@@ -1,1 +1,61 @@
+.testBody {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+ // background: linear-gradient(to bottom right, #4286f4, #8186f4);
+background : rgba(45, 85, 255,1);
+}
 
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #333;
+}
+
+.cell {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: white;
+}
+
+#resetBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+#resetBtn:hover {
+  background-color: #45a049;
+}
+
+canvas {
+      width: 100%;
+      height: 30vh;
+    }
