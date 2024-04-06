@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+<script type='text/javascript'>
+function redirect()
+{
 
+ var x = document.getElementById("username").value;
+ var y = document.getElementById("password").value;
+if(x == "" || y == "")
+{
+ return false;
+}
+else
+{
+return true;
+}
+}
+</script>
+</head>
+<body>
+    <div class="login-div">
+        <h1 class="game">TIC TAC TOE</h1>
+        <h2>Login</h2>
+        <form id="login-form" action="landingpage.html">
+            <div class="input-group">
+                <label for="username" >Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div id="btn">               
+		 <button type="submit" onclick="redirect();">Log in</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
